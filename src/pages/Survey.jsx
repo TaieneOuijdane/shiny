@@ -53,10 +53,10 @@ function Survey(){
     const questionNumberInt = parseInt(questionNumber)
     const prevQuestionNumber = questionNumberInt === 1 ? 1 : questionNumberInt - 1
     const nextQuestionNumber = questionNumberInt + 1
-    const surveyData = ['Avez-vous l’habitude de porter des ornements au niveau des poignets (tels que des bracelets, montres, bijoux,…) ?',
-    'Êtes-vous intéressé(e) par ce nouveau concept de bracelet connecté/télécommande universelle ?',
-    'Seriez-vous susceptible d’acheter ce bracelet connecté?',
-    'Est ce que vous possédez plus que 3 équipements technologiques connectés ?']
+    const surveyData = ['Est ce que vous avez déjà travailler avec React Js?',
+    'Est ce que vous avez réaliser plus que 3 projets?',
+    'Est ce que vous avez effectué un stage technique?',
+    'Est ce que vous pouvez travailler avec Spring boot?']
     const {answers, saveAnswers} = useContext(SurveyContext)
     function saveReply(answer){
         saveAnswers({[questionNumber]:answer})
